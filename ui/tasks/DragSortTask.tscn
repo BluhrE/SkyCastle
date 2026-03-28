@@ -1,0 +1,85 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/DragSortTask.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/ui/core/ui_story_panel_white.svg" id="2"]
+
+[node name="DragSortTask" type="PanelContainer"]
+anchors_preset = 8
+anchor_left = 0.11
+anchor_top = 0.1
+anchor_right = 0.89
+anchor_bottom = 0.88
+script = ExtResource("1")
+
+[node name="PanelArt" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand_mode = 1
+mouse_filter = 2
+ignore_texture_size = true
+texture = ExtResource("2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TopRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer/TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.05, 0.05, 0.05, 1)
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+text = "Drag each helper into the right cozy basket."
+
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer/TopRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(52, 52)
+theme_override_font_sizes/font_size = 24
+text = "X"
+
+[node name="FeedbackLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.08, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+autowrap_mode = 3
+text = "Pick up a helper and drop it inside the right basket."
+
+[node name="PlayArea" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 360)
+layout_mode = 2
+
+[node name="TargetRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PlayArea"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 780.0
+offset_bottom = 180.0
+theme_override_constants/separation = 18
+
+[node name="PieceArea" type="Control" parent="MarginContainer/VBoxContainer/PlayArea"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 170.0
+offset_right = 760.0
+offset_bottom = 350.0
+
+[node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(260, 64)
+theme_override_font_sizes/font_size = 24
+text = "Sorted!"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TopRow/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]

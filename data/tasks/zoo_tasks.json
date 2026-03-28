@@ -1,0 +1,84 @@
+{
+  "world_id": "zoo",
+  "friend": "Nora the Zookeeper",
+  "tasks": [
+    {
+      "id": "zoo_sounds",
+      "name": "Match the happy sound",
+      "button_text": "Happy\nSound",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Which friend says chirp chirp?",
+      "hint": "Think of the little bird friend.",
+      "correct_option": "parrot",
+      "options": [
+        {"id": "lion", "label": "Lion"},
+        {"id": "parrot", "label": "Parrot"},
+        {"id": "elephant", "label": "Elephant"}
+      ],
+      "success_text": "Yes. The parrot makes a chirpy sound.",
+      "retry_text": "Let's listen for the little bird sound again.",
+      "stars": 1
+    },
+    {
+      "id": "zoo_memory",
+      "name": "Find the matching cards",
+      "button_text": "Memory\nCards",
+      "type": "memory",
+      "scene": "res://ui/tasks/MemoryPairsTask.tscn",
+      "prompt": "Find the two cards that match at the zoo.",
+      "hint": "Turn over two cards and see if they match.",
+      "cards": ["Lion", "Parrot", "Monkey"],
+      "card_back_label": "Zoo",
+      "stars": 1
+    },
+    {
+      "id": "zoo_count",
+      "name": "Count the bright feathers",
+      "button_text": "Count\nFeathers",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "How many bright feathers are in Nora's bundle?",
+      "hint": "Count the feathers one by one.",
+      "correct_option": "7",
+      "options": [
+        {"id": "5", "label": "5 Feathers"},
+        {"id": "7", "label": "7 Feathers"},
+        {"id": "9", "label": "9 Feathers"}
+      ],
+      "success_text": "Seven feathers. Lovely counting.",
+      "retry_text": "Let's count that bundle again together.",
+      "stars": 1
+    },
+    {
+      "id": "zoo_phonics",
+      "name": "Find the P sound",
+      "button_text": "Letter\nSound",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Which letter starts Parrot?",
+      "hint": "Parrot starts with a poppy P sound.",
+      "correct_option": "p",
+      "options": [
+        {"id": "p", "label": "P"},
+        {"id": "t", "label": "T"},
+        {"id": "b", "label": "B"}
+      ],
+      "success_text": "P is for Parrot. The letter gate opened.",
+      "retry_text": "Not that one yet. Let's find P.",
+      "stars": 1
+    },
+    {
+      "id": "zoo_song",
+      "name": "Wake the happy sound stand",
+      "button_text": "Sound Stand",
+      "type": "final",
+      "scene": "res://ui/tasks/PlaceTokenTask.tscn",
+      "prompt": "Drag the sound star to Nora's happy sound stand.",
+      "hint": "The sound stand is waiting for its bright star.",
+      "socket_label": "Sound Stand",
+      "token_label": "Sound Star",
+      "stars": 0
+    }
+  ]
+}

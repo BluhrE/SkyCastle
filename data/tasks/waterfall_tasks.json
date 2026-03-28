@@ -1,0 +1,53 @@
+{
+  "world_id": "waterfall",
+  "friend": "Bibi the Frog",
+  "tasks": [
+    {
+      "id": "count_drops",
+      "name": "Count the shiny drops",
+      "type": "count",
+      "scene": "res://ui/tasks/CountDropsTask.tscn",
+      "prompt": "How many shiny water drops can you count?",
+      "hint": "Count each bright drop one by one.",
+      "answer": 5,
+      "stars": 1
+    },
+    {
+      "id": "match_flowers",
+      "name": "Match the water flowers",
+      "type": "match",
+      "scene": "res://ui/tasks/MatchFlowersTask.tscn",
+      "prompt": "Match each sleepy flower with its shining blossom ring.",
+      "hint": "Pick a flower, then click the blossom ring that matches it.",
+      "stars": 1
+    },
+    {
+      "id": "splash_sequence",
+      "name": "Tap the splash stones",
+      "type": "sequence",
+      "scene": "res://ui/tasks/SplashSequenceTask.tscn",
+      "prompt": "Tap the splash stones in order: 1, 2, 3, 4.",
+      "hint": "Start at splash stone 1 and keep going.",
+      "stars": 1
+    },
+    {
+      "id": "drag_sparkles",
+      "name": "Drag sparkles into the stream",
+      "type": "drag",
+      "scene": "res://ui/tasks/DragSparklesTask.tscn",
+      "prompt": "Drag the bright sparkles into the stream rings.",
+      "hint": "Pick up a sparkle and drop it inside a stream ring.",
+      "stars": 1
+    },
+    {
+      "id": "restore_song",
+      "name": "Restore the waterfall song",
+      "type": "final",
+      "scene": "res://ui/tasks/CrystalRestoreTask.tscn",
+      "prompt": "Drag the sparkling crystal to the glowing stand.",
+      "hint": "The glowing stand at the top of the waterfall is ready now.",
+      "stars": 0
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+.godot/
+.import/
+export_presets.cfg
+*.tmp
+*.log
+Godot_v*.exe
+debug/captures/*.png
+debug/captures/*.png.import

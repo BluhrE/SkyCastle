@@ -1,0 +1,89 @@
+{
+  "world_id": "house",
+  "friend": "Mimi the Bunny",
+  "tasks": [
+    {
+      "id": "house_sort",
+      "name": "Sort the cozy toys",
+      "button_text": "Sort\nToys",
+      "type": "drag",
+      "scene": "res://ui/tasks/DragSortTask.tscn",
+      "prompt": "Drag each cozy toy to the right room basket.",
+      "hint": "Sleepy things go to bedtime. Play things go to playtime.",
+      "categories": [
+        {"id": "bedtime", "label": "Bedtime Basket"},
+        {"id": "playtime", "label": "Playtime Basket"}
+      ],
+      "pieces": [
+        {"id": "blanket", "label": "Blanket", "category": "bedtime", "color": [0.99, 0.83, 0.89, 1.0]},
+        {"id": "pajamas", "label": "Pajamas", "category": "bedtime", "color": [0.81, 0.89, 1.0, 1.0]},
+        {"id": "ball", "label": "Ball", "category": "playtime", "color": [1.0, 0.82, 0.55, 1.0]},
+        {"id": "blocks", "label": "Blocks", "category": "playtime", "color": [0.78, 0.95, 0.78, 1.0]}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "house_pattern",
+      "name": "Finish the room pattern",
+      "button_text": "Room\nPattern",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Pillow, lamp, pillow, lamp... what comes next?",
+      "hint": "The room pattern takes turns.",
+      "correct_option": "pillow",
+      "options": [
+        {"id": "lamp", "label": "Lamp"},
+        {"id": "pillow", "label": "Pillow"},
+        {"id": "book", "label": "Book"}
+      ],
+      "success_text": "Yes. Pillow keeps the pattern cozy.",
+      "retry_text": "Let's watch the turn-taking pattern again.",
+      "stars": 1
+    },
+    {
+      "id": "house_match",
+      "name": "Match the helper pairs",
+      "button_text": "Helper\nPairs",
+      "type": "match",
+      "scene": "res://ui/tasks/PairMatchTask.tscn",
+      "prompt": "Match each house helper with what it uses.",
+      "hint": "Find the helper that belongs with each item.",
+      "pairs": [
+        {"id": "brush", "left": "Toothbrush", "right": "Sink"},
+        {"id": "plate", "left": "Plate", "right": "Table"},
+        {"id": "book", "left": "Story Book", "right": "Reading Pillow"}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "house_steps",
+      "name": "Choose the next cozy step",
+      "button_text": "Cozy\nSteps",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "First we brush teeth. Then we put on pajamas. What comes next?",
+      "hint": "Think of the next bedtime step after pajamas.",
+      "correct_option": "blanket",
+      "options": [
+        {"id": "blanket", "label": "Snuggle Blanket"},
+        {"id": "shovel", "label": "Beach Shovel"},
+        {"id": "lantern", "label": "Forest Lantern"}
+      ],
+      "success_text": "Yes. The cozy bedtime step comes next.",
+      "retry_text": "Let's think about bedtime in order again.",
+      "stars": 1
+    },
+    {
+      "id": "house_surprise",
+      "name": "Open the secret surprise",
+      "button_text": "Surprise\nBow",
+      "type": "final",
+      "scene": "res://ui/tasks/PlaceTokenTask.tscn",
+      "prompt": "Drag the surprise bow onto Mimi's shining present stand.",
+      "hint": "Place the bow on the shining present stand to open the surprise.",
+      "socket_label": "Present Stand",
+      "token_label": "Surprise Bow",
+      "stars": 0
+    }
+  ]
+}

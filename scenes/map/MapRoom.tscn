@@ -1,0 +1,256 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/scenes/MapRoom.gd" id="1"]
+[ext_resource type="PackedScene" path="res://ui/DialogueBubble.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://ui/HintPanel.tscn" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/backgrounds/map_room/bg_map_room_wall.svg" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/backgrounds/map_room/bg_map_room_arch.svg" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/map_room/prop_map_room_board.svg" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/map_room/prop_map_room_waterfall_path.svg" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/map_room/prop_map_room_marker_castle.svg" id="8"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/map_room/prop_map_room_marker_waterfall.svg" id="9"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/map_room/prop_map_room_marker_locked.svg" id="10"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/ui/core/ui_hud_plaque.svg" id="11"]
+[ext_resource type="PackedScene" path="res://ui/PauseMenu.tscn" id="12"]
+
+[node name="MapRoom" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("4")
+
+[node name="BackgroundArch" type="TextureRect" parent="."]
+offset_left = 180.0
+offset_top = 40.0
+offset_right = 1100.0
+offset_bottom = 640.0
+mouse_filter = 2
+texture = ExtResource("5")
+
+[node name="Midground" type="Node2D" parent="."]
+
+[node name="MapBoard" type="TextureRect" parent="Midground"]
+offset_left = 254.0
+offset_top = 106.0
+offset_right = 1034.0
+offset_bottom = 600.0
+mouse_filter = 2
+texture = ExtResource("6")
+
+[node name="WaterfallPath" type="TextureRect" parent="Midground"]
+offset_left = 478.0
+offset_top = 236.0
+offset_right = 658.0
+offset_bottom = 290.0
+mouse_filter = 2
+texture = ExtResource("7")
+
+[node name="ForestPath" type="TextureRect" parent="Midground"]
+offset_left = 716.0
+offset_top = 158.0
+offset_right = 974.0
+offset_bottom = 302.0
+mouse_filter = 2
+visible = false
+
+[node name="BeachPath" type="TextureRect" parent="Midground"]
+offset_left = 868.0
+offset_top = 270.0
+offset_right = 1088.0
+offset_bottom = 430.0
+mouse_filter = 2
+visible = false
+
+[node name="ZooPath" type="TextureRect" parent="Midground"]
+offset_left = 504.0
+offset_top = 330.0
+offset_right = 758.0
+offset_bottom = 496.0
+mouse_filter = 2
+visible = false
+
+[node name="HousePath" type="TextureRect" parent="Midground"]
+offset_left = 318.0
+offset_top = 324.0
+offset_right = 548.0
+offset_bottom = 474.0
+mouse_filter = 2
+visible = false
+
+[node name="PlayLayer" type="Node2D" parent="."]
+
+[node name="CastleMarker" type="Button" parent="PlayLayer"]
+offset_left = 352.0
+offset_top = 206.0
+offset_right = 500.0
+offset_bottom = 330.0
+flat = true
+theme_override_colors/font_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_font_sizes/font_size = 22
+text = "Castle"
+disabled = true
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/CastleMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("8")
+
+[node name="WaterfallMarker" type="Button" parent="PlayLayer"]
+offset_left = 606.0
+offset_top = 176.0
+offset_right = 822.0
+offset_bottom = 338.0
+flat = true
+theme_override_colors/font_color = Color(0.07, 0.07, 0.07, 1)
+theme_override_font_sizes/font_size = 24
+text = "Glitterdrop\nWaterfall"
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/WaterfallMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("9")
+
+[node name="ForestMarker" type="Button" parent="PlayLayer"]
+offset_left = 846.0
+offset_top = 150.0
+offset_right = 1001.0
+offset_bottom = 278.0
+flat = true
+theme_override_colors/font_color = Color(0.18, 0.18, 0.18, 1)
+theme_override_font_sizes/font_size = 20
+text = "Forest\nLocked"
+disabled = true
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/ForestMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("10")
+
+[node name="BeachMarker" type="Button" parent="PlayLayer"]
+offset_left = 825.0
+offset_top = 365.0
+offset_right = 983.0
+offset_bottom = 495.0
+flat = true
+theme_override_colors/font_color = Color(0.18, 0.18, 0.18, 1)
+theme_override_font_sizes/font_size = 20
+text = "Beach\nLocked"
+disabled = true
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/BeachMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("10")
+
+[node name="ZooMarker" type="Button" parent="PlayLayer"]
+offset_left = 538.0
+offset_top = 403.0
+offset_right = 690.0
+offset_bottom = 533.0
+flat = true
+theme_override_colors/font_color = Color(0.18, 0.18, 0.18, 1)
+theme_override_font_sizes/font_size = 20
+text = "Zoo\nLocked"
+disabled = true
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/ZooMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("10")
+
+[node name="HouseMarker" type="Button" parent="PlayLayer"]
+offset_left = 331.0
+offset_top = 364.0
+offset_right = 491.0
+offset_bottom = 494.0
+flat = true
+theme_override_colors/font_color = Color(0.18, 0.18, 0.18, 1)
+theme_override_font_sizes/font_size = 20
+text = "House\nLocked"
+disabled = true
+
+[node name="MarkerArt" type="TextureRect" parent="PlayLayer/HouseMarker"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+show_behind_parent = true
+texture = ExtResource("10")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DialogueBubble" parent="CanvasLayer" instance=ExtResource("2")]
+
+[node name="HintPanel" parent="CanvasLayer" instance=ExtResource("3")]
+
+[node name="HudRibbon" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_left = 0.62
+anchor_top = 0.03
+anchor_right = 0.97
+anchor_bottom = 0.16
+
+[node name="PlaqueArt" type="TextureRect" parent="CanvasLayer/HudRibbon"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand_mode = 1
+mouse_filter = 2
+texture = ExtResource("11")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HudRibbon"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 12
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HudRibbon/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="StarCount" type="Label" parent="CanvasLayer/HudRibbon/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.08, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 22
+text = "Heart Stars: 0"
+
+[node name="RibbonCount" type="Label" parent="CanvasLayer/HudRibbon/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.08, 0.08, 0.08, 1)
+theme_override_font_sizes/font_size = 22
+text = "Sunset Ribbons: 0"
+
+[node name="PauseOverlay" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+color = Color(0.18, 0.13, 0.2, 0.42)
+visible = false
+
+[node name="PauseMenu" parent="CanvasLayer/PauseOverlay" instance=ExtResource("12")]
+
+[connection signal="pressed" from="PlayLayer/WaterfallMarker" to="." method="_on_waterfall_marker_pressed"]
+[connection signal="pressed" from="PlayLayer/ForestMarker" to="." method="_on_forest_marker_pressed"]
+[connection signal="pressed" from="PlayLayer/BeachMarker" to="." method="_on_beach_marker_pressed"]
+[connection signal="pressed" from="PlayLayer/ZooMarker" to="." method="_on_zoo_marker_pressed"]
+[connection signal="pressed" from="PlayLayer/HouseMarker" to="." method="_on_house_marker_pressed"]

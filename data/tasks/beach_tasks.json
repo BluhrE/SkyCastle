@@ -1,0 +1,89 @@
+{
+  "world_id": "beach",
+  "friend": "Tilly the Crab",
+  "tasks": [
+    {
+      "id": "beach_count",
+      "name": "Count the sunny shells",
+      "button_text": "Count\nShells",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "How many sunny shells are in Tilly's row today?",
+      "hint": "Count carefully up to 10.",
+      "correct_option": "8",
+      "options": [
+        {"id": "6", "label": "6 Shells"},
+        {"id": "8", "label": "8 Shells"},
+        {"id": "10", "label": "10 Shells"}
+      ],
+      "success_text": "Eight sunny shells. Wonderful counting.",
+      "retry_text": "Let's count again slowly from one.",
+      "stars": 1
+    },
+    {
+      "id": "beach_pattern",
+      "name": "Finish the wave pattern",
+      "button_text": "Wave\nPattern",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Shell, star, shell, star... what comes next?",
+      "hint": "The pattern keeps taking turns.",
+      "correct_option": "shell",
+      "options": [
+        {"id": "shell", "label": "Shell"},
+        {"id": "star", "label": "Star"},
+        {"id": "crab", "label": "Crab"}
+      ],
+      "success_text": "Yes. The shell keeps the pattern going.",
+      "retry_text": "Watch the turn-taking pattern one more time.",
+      "stars": 1
+    },
+    {
+      "id": "beach_sizes",
+      "name": "Sort big and small treasures",
+      "button_text": "Sort\nSizes",
+      "type": "drag",
+      "scene": "res://ui/tasks/DragSortTask.tscn",
+      "prompt": "Drag each beach treasure into the big or small basket.",
+      "hint": "Big treasures go together. Small treasures go together.",
+      "categories": [
+        {"id": "big", "label": "Big Basket"},
+        {"id": "small", "label": "Small Basket"}
+      ],
+      "pieces": [
+        {"id": "big_shell", "label": "Big Shell", "category": "big", "color": [0.98, 0.79, 0.62, 1.0]},
+        {"id": "big_star", "label": "Big Star", "category": "big", "color": [1.0, 0.9, 0.48, 1.0]},
+        {"id": "small_shell", "label": "Small Shell", "category": "small", "color": [0.99, 0.91, 0.74, 1.0]},
+        {"id": "small_pebble", "label": "Small Pebble", "category": "small", "color": [0.74, 0.88, 0.98, 1.0]}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "beach_match",
+      "name": "Match the sand toys",
+      "button_text": "Match\nToys",
+      "type": "match",
+      "scene": "res://ui/tasks/PairMatchTask.tscn",
+      "prompt": "Match each beach toy with the one that looks the same.",
+      "hint": "Find the same toy shape on the right.",
+      "pairs": [
+        {"id": "bucket", "left": "Bucket", "right": "Bucket Match"},
+        {"id": "shovel", "left": "Shovel", "right": "Shovel Match"},
+        {"id": "boat", "left": "Boat", "right": "Boat Match"}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "beach_tide_chime",
+      "name": "Lift the tide chime",
+      "button_text": "Tide Chime",
+      "type": "final",
+      "scene": "res://ui/tasks/PlaceTokenTask.tscn",
+      "prompt": "Drag the tide sparkle onto Tilly's bright tide chime.",
+      "hint": "Place the tide sparkle on the shining chime stand.",
+      "socket_label": "Tide Chime",
+      "token_label": "Tide Sparkle",
+      "stars": 0
+    }
+  ]
+}

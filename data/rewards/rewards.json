@@ -1,0 +1,32 @@
+{
+  "waterfall": {
+    "title": "Glitterdrop Waterfall Restored",
+    "heart_stars": 4,
+    "sunset_ribbon": true,
+    "message": "Bibi cheered as the rainbow mist glittered again. Sky earned four Heart Stars and the first Sunset Ribbon."
+  },
+  "forest": {
+    "title": "Forest of Friendly Echoes Restored",
+    "heart_stars": 4,
+    "sunset_ribbon": true,
+    "message": "Hazel heard the happy echo song return. Sky earned four more Heart Stars and a glowing Sunset Ribbon."
+  },
+  "beach": {
+    "title": "Beach of Bright Tides Restored",
+    "heart_stars": 4,
+    "sunset_ribbon": true,
+    "message": "Tilly clapped as the tide chime rang again. Sky earned four Heart Stars and another Sunset Ribbon."
+  },
+  "zoo": {
+    "title": "Zoo of Happy Sounds Restored",
+    "heart_stars": 4,
+    "sunset_ribbon": true,
+    "message": "Nora smiled as the happy animal sounds returned. Sky earned four Heart Stars and a bright Sunset Ribbon."
+  },
+  "house": {
+    "title": "The Secret Surprise Restored",
+    "heart_stars": 4,
+    "sunset_ribbon": true,
+    "message": "Mimi's cozy surprise sparkled to life. Sky earned four Heart Stars and the final Sunset Ribbon for now."
+  }
+}

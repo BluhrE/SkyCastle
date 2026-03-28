@@ -1,0 +1,209 @@
+{
+  "castle_intro": [
+    {
+      "speaker": "Narrator",
+      "text": "Rainbow sunset wrapped Sky's princess castle in warm, glowy colors."
+    },
+    {
+      "speaker": "Narrator",
+      "text": "In the tower, the Rainbow Adventure Map had gone dim. Its shining paths were fading away."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Oh! My sparkly collar is glowing. Someone needs help.",
+      "voice_path": "res://audio/voices/sky/voice_sky_intro_test.mp3"
+    },
+    {
+      "speaker": "Narrator",
+      "text": "A gentle clue shimmered toward the tower door. The waterfall needed Sky first."
+    }
+  ],
+  "map_first_visit": [
+    {
+      "speaker": "Narrator",
+      "text": "The Rainbow Adventure Map twinkled softly. One path still had a sleepy glow."
+    },
+    {
+      "speaker": "Sky",
+      "text": "That waterfall sparkle is calling me. I can help there."
+    },
+    {
+      "speaker": "Narrator",
+      "text": "Click the glowing waterfall marker to travel to Glitterdrop Waterfall."
+    }
+  ],
+  "waterfall_intro": [
+    {
+      "speaker": "Bibi",
+      "text": "Hi, Sky. The waterfall song is all mixed up today."
+    },
+    {
+      "speaker": "Bibi",
+      "text": "My shiny drops, flowers, splash stones, and stream sparkles need a little help."
+    },
+    {
+      "speaker": "Sky",
+      "text": "We can do it together. Let's make the rainbow mist sing again."
+    }
+  ],
+  "waterfall_complete": [
+    {
+      "speaker": "Bibi",
+      "text": "You did it, Sky! The crystal is glowing and the waterfall is singing again."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Hooray! The map will shine a little brighter now."
+    }
+  ],
+  "map_after_waterfall": [
+    {
+      "speaker": "Narrator",
+      "text": "Back in the map room, the Glitterdrop Waterfall path shimmered with fresh color."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Bibi is smiling again, and I brought home my first Sunset Ribbon."
+    },
+    {
+      "speaker": "Narrator",
+      "text": "A leafy forest path is waking up next."
+    }
+  ],
+  "forest_intro": [
+    {
+      "speaker": "Hazel",
+      "text": "Hello, Sky. The echo lanterns are quiet in my forest today."
+    },
+    {
+      "speaker": "Hazel",
+      "text": "Can you help me with colors, shapes, sorting, and a little letter glow?"
+    },
+    {
+      "speaker": "Sky",
+      "text": "Yes, Hazel. We'll wake the friendly echoes together."
+    }
+  ],
+  "forest_complete": [
+    {
+      "speaker": "Hazel",
+      "text": "Listen, Sky. The forest is singing back now."
+    },
+    {
+      "speaker": "Sky",
+      "text": "The map will love this new leafy sparkle."
+    }
+  ],
+  "map_after_forest": [
+    {
+      "speaker": "Narrator",
+      "text": "The forest path glowed bright and cozy across the Rainbow Adventure Map."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Hazel's echoes are happy again. I think the beach is waking up next."
+    }
+  ],
+  "beach_intro": [
+    {
+      "speaker": "Tilly",
+      "text": "Hi, Sky. My bright tide chime forgot its splashy pattern."
+    },
+    {
+      "speaker": "Tilly",
+      "text": "Can we count, sort, and match until the beach sparkles again?"
+    },
+    {
+      "speaker": "Sky",
+      "text": "Yes. We'll make the waves feel cheerful and sunny."
+    }
+  ],
+  "beach_complete": [
+    {
+      "speaker": "Tilly",
+      "text": "The tide chime is ringing! The beach feels bright again."
+    },
+    {
+      "speaker": "Sky",
+      "text": "I can almost hear the zoo calling from the map now."
+    }
+  ],
+  "map_after_beach": [
+    {
+      "speaker": "Narrator",
+      "text": "The beach path rolled across the map like a warm ribbon of seafoam."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Tilly is smiling. Next I can help at the zoo."
+    }
+  ],
+  "zoo_intro": [
+    {
+      "speaker": "Nora",
+      "text": "Welcome, Sky. Our happy sounds got mixed and muddled."
+    },
+    {
+      "speaker": "Nora",
+      "text": "Let's listen, match, remember, count, and help the zoo hum again."
+    },
+    {
+      "speaker": "Sky",
+      "text": "I'm ready. We'll help every happy sound find home."
+    }
+  ],
+  "zoo_complete": [
+    {
+      "speaker": "Nora",
+      "text": "You did it. The zoo sounds bright and joyful again."
+    },
+    {
+      "speaker": "Sky",
+      "text": "That means one more surprise is waiting at the house."
+    }
+  ],
+  "map_after_zoo": [
+    {
+      "speaker": "Narrator",
+      "text": "The zoo path twinkled into place on the map with cheerful color."
+    },
+    {
+      "speaker": "Sky",
+      "text": "Only Mimi's house is still waiting now."
+    }
+  ],
+  "house_intro": [
+    {
+      "speaker": "Mimi",
+      "text": "Hi, Sky. My secret surprise room needs one more kind helper."
+    },
+    {
+      "speaker": "Mimi",
+      "text": "Can you help me sort, match, and follow the cozy steps?"
+    },
+    {
+      "speaker": "Sky",
+      "text": "Of course. We'll make your surprise shine."
+    }
+  ],
+  "house_complete": [
+    {
+      "speaker": "Mimi",
+      "text": "The secret surprise is glowing! Thank you, Sky."
+    },
+    {
+      "speaker": "Sky",
+      "text": "All the ribbons feel warm and ready for a big castle celebration soon."
+    }
+  ],
+  "map_after_house": [
+    {
+      "speaker": "Narrator",
+      "text": "Back at the map room, every first path glowed with new sunset color."
+    },
+    {
+      "speaker": "Sky",
+      "text": "My ribbons are ready. The Sunset Rainbow Celebration can come next."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "worlds": [
+    {
+      "id": "waterfall",
+      "name": "Glitterdrop Waterfall",
+      "scene": "res://scenes/worlds/WaterfallWorld.tscn",
+      "task_file": "res://data/tasks/waterfall_tasks.json",
+      "chapter": 1,
+      "friend": "Bibi the Frog",
+      "marker_position": [714, 257]
+    },
+    {
+      "id": "forest",
+      "name": "Forest of Friendly Echoes",
+      "scene": "res://scenes/worlds/ForestWorld.tscn",
+      "task_file": "res://data/tasks/forest_tasks.json",
+      "chapter": 2,
+      "friend": "Hazel the Owl",
+      "marker_position": [924, 214],
+      "background_texture": "res://assets/art/first_slice/backgrounds/forest/bg_forest_echoes.svg",
+      "midground_texture": "res://assets/art/first_slice/props/forest/prop_forest_setpiece.svg",
+      "foreground_texture": "res://assets/art/first_slice/props/forest/prop_forest_foreground.svg",
+      "friend_texture": "res://assets/art/first_slice/characters/hazel/char_hazel_owl_idle.svg",
+      "path_texture": "res://assets/art/first_slice/props/map_room/prop_map_room_forest_path.svg"
+    },
+    {
+      "id": "beach",
+      "name": "Beach of Bright Tides",
+      "scene": "res://scenes/worlds/BeachWorld.tscn",
+      "task_file": "res://data/tasks/beach_tasks.json",
+      "chapter": 3,
+      "friend": "Tilly the Crab",
+      "marker_position": [905, 430],
+      "background_texture": "res://assets/art/first_slice/backgrounds/beach/bg_beach_tides.svg",
+      "midground_texture": "res://assets/art/first_slice/props/beach/prop_beach_setpiece.svg",
+      "foreground_texture": "res://assets/art/first_slice/props/beach/prop_beach_foreground.svg",
+      "friend_texture": "res://assets/art/first_slice/characters/tilly/char_tilly_crab_idle.svg",
+      "path_texture": "res://assets/art/first_slice/props/map_room/prop_map_room_beach_path.svg"
+    },
+    {
+      "id": "zoo",
+      "name": "Zoo of Happy Sounds",
+      "scene": "res://scenes/worlds/ZooWorld.tscn",
+      "task_file": "res://data/tasks/zoo_tasks.json",
+      "chapter": 4,
+      "friend": "Nora the Zookeeper",
+      "marker_position": [614, 470],
+      "background_texture": "res://assets/art/first_slice/backgrounds/zoo/bg_zoo_happy_sounds.svg",
+      "midground_texture": "res://assets/art/first_slice/props/zoo/prop_zoo_setpiece.svg",
+      "foreground_texture": "res://assets/art/first_slice/props/zoo/prop_zoo_foreground.svg",
+      "friend_texture": "res://assets/art/first_slice/characters/nora/char_nora_zookeeper_idle.svg",
+      "path_texture": "res://assets/art/first_slice/props/map_room/prop_map_room_zoo_path.svg"
+    },
+    {
+      "id": "house",
+      "name": "The House with the Secret Surprise",
+      "scene": "res://scenes/worlds/HouseWorld.tscn",
+      "task_file": "res://data/tasks/house_tasks.json",
+      "chapter": 5,
+      "friend": "Mimi the Bunny",
+      "marker_position": [411, 430],
+      "background_texture": "res://assets/art/first_slice/backgrounds/house/bg_house_surprise.svg",
+      "midground_texture": "res://assets/art/first_slice/props/house/prop_house_setpiece.svg",
+      "foreground_texture": "res://assets/art/first_slice/props/house/prop_house_foreground.svg",
+      "friend_texture": "res://assets/art/first_slice/characters/mimi/char_mimi_bunny_idle.svg",
+      "path_texture": "res://assets/art/first_slice/props/map_room/prop_map_room_house_path.svg"
+    }
+  ]
+}

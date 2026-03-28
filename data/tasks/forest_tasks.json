@@ -1,0 +1,89 @@
+{
+  "world_id": "forest",
+  "friend": "Hazel the Owl",
+  "tasks": [
+    {
+      "id": "forest_colors",
+      "name": "Wake the color lanterns",
+      "button_text": "Color\nLanterns",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Which lantern glows green like the forest leaves?",
+      "hint": "Click the lantern color that looks leafy green.",
+      "correct_option": "green",
+      "options": [
+        {"id": "pink", "label": "Pink Lantern"},
+        {"id": "green", "label": "Green Lantern"},
+        {"id": "blue", "label": "Blue Lantern"}
+      ],
+      "success_text": "Yes. That green lantern woke right up.",
+      "retry_text": "That one looks different. Let's try the leafy color.",
+      "stars": 1
+    },
+    {
+      "id": "forest_shapes",
+      "name": "Match the cozy shapes",
+      "button_text": "Match\nShapes",
+      "type": "match",
+      "scene": "res://ui/tasks/PairMatchTask.tscn",
+      "prompt": "Match each forest shape with its cozy nest.",
+      "hint": "Pick a shape on the left, then the same shape home on the right.",
+      "pairs": [
+        {"id": "round", "left": "Round Leaf", "right": "Round Nest"},
+        {"id": "heart", "left": "Heart Acorn", "right": "Heart Nest"},
+        {"id": "star", "left": "Star Fern", "right": "Star Nest"}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "forest_sort",
+      "name": "Sort the forest finds",
+      "button_text": "Sort\nFinds",
+      "type": "drag",
+      "scene": "res://ui/tasks/DragSortTask.tscn",
+      "prompt": "Drag each forest find into the right basket.",
+      "hint": "Round things go to the round basket. Pointy things go to the pointy basket.",
+      "categories": [
+        {"id": "round", "label": "Round Basket"},
+        {"id": "pointy", "label": "Pointy Basket"}
+      ],
+      "pieces": [
+        {"id": "mushroom", "label": "Round Mushroom", "category": "round", "color": [1.0, 0.77, 0.63, 1.0]},
+        {"id": "berry", "label": "Round Berry", "category": "round", "color": [1.0, 0.58, 0.72, 1.0]},
+        {"id": "fir", "label": "Pointy Fir", "category": "pointy", "color": [0.67, 0.9, 0.67, 1.0]},
+        {"id": "leaf", "label": "Pointy Leaf", "category": "pointy", "color": [0.94, 0.83, 0.42, 1.0]}
+      ],
+      "stars": 1
+    },
+    {
+      "id": "forest_letters",
+      "name": "Find Hazel's letter",
+      "button_text": "Letter\nGlow",
+      "type": "choice",
+      "scene": "res://ui/tasks/ChoiceTask.tscn",
+      "prompt": "Hazel starts with H. Which letter is H?",
+      "hint": "Look for the tall letter with two legs and a bridge.",
+      "correct_option": "h",
+      "options": [
+        {"id": "m", "label": "M"},
+        {"id": "h", "label": "H"},
+        {"id": "o", "label": "O"}
+      ],
+      "success_text": "H is for Hazel. The letter glow is back.",
+      "retry_text": "Not that one yet. Let's find H together.",
+      "stars": 1
+    },
+    {
+      "id": "forest_echo_bell",
+      "name": "Wake the echo bell",
+      "button_text": "Echo Bell",
+      "type": "final",
+      "scene": "res://ui/tasks/PlaceTokenTask.tscn",
+      "prompt": "Drag the echo gem to Hazel's singing bell.",
+      "hint": "The bell at the top is waiting for the glowing echo gem.",
+      "socket_label": "Echo Bell",
+      "token_label": "Echo Gem",
+      "stars": 0
+    }
+  ]
+}
