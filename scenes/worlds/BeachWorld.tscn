@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" path="res://ui/DialogueBubble.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://ui/HintPanel.tscn" id="4"]
 [ext_resource type="PackedScene" path="res://ui/PauseMenu.tscn" id="5"]
-[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/waterfall/prop_waterfall_hotspot_plaque.svg" id="6"]
-[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/waterfall/prop_waterfall_crystal_hotspot.svg" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/beach/prop_beach_hotspot.svg" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/first_slice/props/beach/prop_beach_final_glow.svg" id="7"]
 [ext_resource type="Texture2D" path="res://assets/art/first_slice/ui/core/ui_hud_plaque.svg" id="8"]
 
 [node name="BeachWorld" type="Node2D"]

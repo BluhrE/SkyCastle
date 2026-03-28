@@ -67,9 +67,11 @@ func _merge_with_defaults(source: Dictionary) -> Dictionary:
 		if key == "worlds" and source[key] is Dictionary:
 			for world_id in source[key].keys():
 				merged["worlds"][world_id] = _default_world_state(false)
-				var incoming_world: Dictionary = source[key][world_id]
-				for world_key in incoming_world.keys():
-					merged["worlds"][world_id][world_key] = incoming_world[world_key]
+				var incoming_world_value = source[key][world_id]
+				if incoming_world_value is Dictionary:
+					var incoming_world: Dictionary = incoming_world_value
+					for world_key in incoming_world.keys():
+						merged["worlds"][world_id][world_key] = incoming_world[world_key]
 		else:
 			merged[key] = source[key]
 	_sync_flags(merged)
@@ -94,6 +96,8 @@ func load_save() -> void:
 			if parsed is Dictionary:
 				save_data = _merge_with_defaults(parsed)
 				print("[Save] Loaded save data from ", SAVE_PATH)
+			else:
+				push_warning("[Save] Save file was present but invalid. Using default progress.")
 	else:
 		print("[Save] No save file found. Using default progress.")
 	_sync_flags()
@@ -106,6 +110,8 @@ func save_game() -> void:
 	if file:
 		file.store_string(JSON.stringify(save_data))
 		print("[Save] Saved progress to ", SAVE_PATH)
+	else:
+		push_warning("[Save] Could not write progress to ", SAVE_PATH)
 
 
 func begin_new_game() -> void:
